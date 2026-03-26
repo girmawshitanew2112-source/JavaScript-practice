@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Rock-paper-scisser></Rock-paper-scisser></title>
+    <style>
+        div{
+            margin:auto;
+            text-align:center;
+            background-color: rgb(238, 255, 0);
+            width:400px;
+            margin-top: 100px;
+        }
+        p{
+            font-size:larger;
+            color:rgb(89, 8, 238);
+            margin-top: 80px;
+        }
+        button{
+            background-color: blue;
+            border: 2px red solid;
+            color:white;
+            border-radius: 5px;
+            width: 100px;
+            margin-bottom: 30px;
+            height:50px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    <p>Rock Paper Scissers Game</p>
+    <button onclick="
+        const randomNumber= Math.random();
+        let computerMove ='';
+
+        if (randomNumber>=0 && randomNumber<1/3 ){
+           computerMove ='Rock';
+        }else if(randomNumber>=1/3 && randomNumber<2/3 ){
+            computerMove ='Paper';
+        }else if(randomNumber>=2/3 && randomNumber<=1 ){
+            computerMove ='Scisser';
+        }
+        console.log(computerMove);
+
+        let result='';
+        if (computerMove==='Rock'){
+            result='Tei.';
+        }else if(computerMove==='Paper'){
+            result = 'you lose.';
+        }else if(computerMove==='Scisser'){
+            result ='you win! COGRAGULATION!!';
+        }
+        alert(`you choose Rock. the computer choose ${computerMove}.${result}`);
+
+    ">Rock</button>
+
+    <button onclick="    
+        const randomNumber= Math.random();
+        let computerMove='';
+
+        if (randomNumber>=0 && randomNumber<1/3 ){
+           computerMove ='Rock';
+        }else if(randomNumber>=1/3 && randomNumber<2/3 ){
+            computerMove ='Paper';
+        }else if(randomNumber>=2/3 && randomNumber<=1 ){
+            computerMove ='Scisser';
+        }
+        //console.log(computerMove);
+
+        let result='';
+        if (computerMove==='Rock'){
+            result='you win.Congragilation!!';
+        }else if(computerMove==='Paper'){
+            result = 'Tie.';
+        }else if(computerMove==='Scisser'){
+            result ='you lose';
+        }
+        alert(`you choose Paper. the computer choose ${computerMove}.${result}`);
+        ">Paper</button>
+
+    <button onclick="    
+        const randomNumber= Math.random();
+        let computerMove ='';
+
+        if (randomNumber>=0 && randomNumber<1/3 ){
+           computerMove ='Rock';
+        }else if(randomNumber>=1/3 && randomNumber<2/3 ){
+            computerMove ='Paper';
+        }else if(randomNumber>=2/3 && randomNumber<=1 ){
+            computerMove ='Scisser';
+        }
+        console.log(computerMove);
+
+        let result='';
+        if (computerMove==='Rock'){
+            result='you lose';
+        }else if(computerMove==='Paper'){
+            result = 'you win.Congragulation!!';
+        }else if(computerMove==='Scisser'){
+            result ='Tie.';
+        }
+        alert(`you choose Scisser. the computer choose ${computerMove}.${result}`);
+        ">Scisser</button>
+   </div> 
+</body>
+</html>
